@@ -54,6 +54,9 @@ class CarDetail extends Component {
                                         </a>
                                     </div>
                                 </div>
+                            </div>                            
+                            <div className="col-md-12">
+                                <button className="btn btn-default" onClick={this.handleRedirect.bind(this)}>Back to news</button>
                             </div>
                         </div>
                     </div>

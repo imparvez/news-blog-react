@@ -86,8 +86,8 @@
 	    url: 'headline-one',
 	    author: 'parvez shaikh',
 	    media: 'http://gsdk.creative-tim.com/assets/img/examples/blog_page.jpg',
-	    listPara: '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>',
-	    detailPara: '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae arcu ligula. Sed dapibus aliquam diam eget tincidunt. In hac habitasse platea dictumst. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent vitae risus dapibus, maximus augue nec, aliquet nisl. Sed fringilla ullamcorper placerat. Nam ut nisi ante. Morbi suscipit sapien massa, sed consectetur nulla rutrum non. Nulla nisl tellus, maximus vehicula felis in, luctus pretium quam. Pellentesque eu nunc non quam suscipit tempor nec sit amet nisi. Donec fringilla elit viverra pulvinar ultrices. Mauris egestas sapien turpis, vestibulum consequat augue ultricies ut. Vivamus lobortis lacus nec lorem ultrices, laoreet tempus ligula aliquet. Donec feugiat dignissim congue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eros lacus, imperdiet sit amet fermentum nec, euismod id mauris. Fusce at orci non ipsum lacinia pulvinar. In ornare lobortis orci. Quisque condimentum malesuada libero vel semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a eleifend neque, in commodo mauris.</p>'
+	    listPara: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+	    detailPara: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae arcu ligula. Sed dapibus aliquam diam eget tincidunt. In hac habitasse platea dictumst. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent vitae risus dapibus, maximus augue nec, aliquet nisl. Sed fringilla ullamcorper placerat. Nam ut nisi ante. Morbi suscipit sapien massa, sed consectetur nulla rutrum non. Nulla nisl tellus, maximus vehicula felis in, luctus pretium quam. Pellentesque eu nunc non quam suscipit tempor nec sit amet nisi. Donec fringilla elit viverra pulvinar ultrices. Mauris egestas sapien turpis, vestibulum consequat augue ultricies ut. Vivamus lobortis lacus nec lorem ultrices, laoreet tempus ligula aliquet. Donec feugiat dignissim congue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eros lacus, imperdiet sit amet fermentum nec, euismod id mauris. Fusce at orci non ipsum lacinia pulvinar. In ornare lobortis orci. Quisque condimentum malesuada libero vel semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a eleifend neque, in commodo mauris.'
 	}];
 	
 	(0, _reactDom.render)(_react2.default.createElement(
@@ -27377,12 +27377,33 @@
 	            // Map through cars and return linked cars
 	            var carNode = cars.map(function (car) {
 	                return _react2.default.createElement(
-	                    _reactRouter.Link,
-	                    {
-	                        to: "/cars/" + car.id,
-	                        className: 'list-group-item',
-	                        key: car.id },
-	                    car.name
+	                    'div',
+	                    { className: 'list-cards' },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'image-container', style: { backgroundColor: 'yellow' } },
+	                        _react2.default.createElement('img', { src: car.media, alt: car.name })
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'list-content' },
+	                        _react2.default.createElement(
+	                            'h4',
+	                            { className: 'title' },
+	                            _react2.default.createElement(
+	                                _reactRouter.Link,
+	                                {
+	                                    to: "/cars/" + car.id,
+	                                    key: car.id },
+	                                car.name
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            car.listPara
+	                        )
+	                    )
 	                );
 	            });
 	            return _react2.default.createElement(
@@ -27551,6 +27572,15 @@
 	                                            ' 411'
 	                                        )
 	                                    )
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                'div',
+	                                { className: 'col-md-12' },
+	                                _react2.default.createElement(
+	                                    'button',
+	                                    { className: 'btn btn-default', onClick: this.handleRedirect.bind(this) },
+	                                    'Back to news'
 	                                )
 	                            )
 	                        )
