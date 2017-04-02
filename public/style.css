@@ -1,4 +1,163 @@
-a.active{
-    color: #000000 !important;
-    text-decoration: underline !important;
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*
+* Basics
+*/
+h4, .h4 {
+    font-size: 22px;
+    line-height: 30px;
+}
+
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+img {
+	vertical-align: middle;
+}
+
+/*
+* Cards
+*/
+
+.card {
+    background-color: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    margin-bottom: 60px;
+}
+
+.card .image {
+    width: 100%;
+    overflow: hidden;
+    height: 260px;
+    border-radius: 6px 6px 0 0;
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    border-radius: 4px;
+}
+
+.card .image img {
+    width: 100%;
+}
+
+.card .filter {
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.68);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.btn {
+    border-width: 2px;
+    background-color: transparent;
+    font-weight: 400;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    padding: 8px 16px;
+    border-color: #888888;
+    color: #888888;
+}
+
+.btn-neutral {
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+}
+
+.btn-simple {
+    border: 0;
+    font-size: 16px;
+    padding: 8px 16px;
+}
+
+.card .filter .btn {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+/*
+* Content
+*/
+
+.card .content {
+    padding: 15px 15px 10px 15px;
+}
+
+.text-danger, .text-danger:hover {
+    color: #FF3B30 !important;
+}
+
+.card .category {
+    font-size: 14px;
+    color: #9A9A9A;
+    margin-bottom: 0px;
+}
+
+.card .category i {
+    font-size: 16px;
+}
+
+.card .card-link {
+    color: #9A9A9A;
+}
+
+.card .title {
+    margin: 0 0 10px 0;
+    color: #333333;
+    font-weight: 300;
+}
+
+/*
+* Card Footer
+*/
+
+.card .footer {
+    padding: 0;
+    background-color: transparent;
+    line-height: 30px;
+}
+
+.card .author {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.card .footer div {
+    display: inline-block;
+}
+
+.card .avatar {
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.card .stats.pull-right {
+    margin-left: 5px;
+    margin-left: 0;
+}
+
+.card .stats {
+    margin-right: 5px;
+    color: #9A9A9A;
 }

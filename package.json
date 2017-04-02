@@ -1,28 +1,26 @@
 {
-  "name": "scotch-react-router",
+  "name": "scotch-cars",
   "version": "1.0.0",
-  "description": "React Router Aricle for Scotch",
+  "description": "Car's Application",
   "main": "index.js",
   "scripts": {
     "watch": "webpack -d --watch",
     "build": "webpack",
-    "serve": "serve ./public",
-    "start": "nodemon"
+    "serve": "serve ./public"
   },
-  "author": "Christian Nwamba",
-  "license": "MIT",
+  "author": "Parvez Shaikh <parvezshaikhj@gmail.com>",
+  "license": "ISC",
   "devDependencies": {
-    "babel-loader": "^6.2.4",
-    "babel-preset-es2015": "^6.13.2",
-    "babel-preset-react": "^6.11.1",
-    "webpack": "^1.13.1",
-    "serve": "^1.4.0"
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "serve": "^2.1.2",
+    "webpack": "^1.14.0"
   },
   "dependencies": {
-    "express": "^4.14.0",
-    "history": "^3.0.0",
-    "react": "^15.3.0",
-    "react-dom": "^15.3.0",
-    "react-router": "^2.6.1"
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "react-router": "^3.0.0"
   }
 }

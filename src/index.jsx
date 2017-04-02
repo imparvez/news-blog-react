@@ -12,50 +12,12 @@ import CarDetail from './car/car-detail.component.jsx'
 const data = [
     {
         id: 1,
-        name: 'Honda Accord Crosstour',
-        year: '2010',
-        model: 'Accord Crosstour',
-        make: 'Honda',
-        media: 'http://media.ed.edmunds-media.com/honda/accord-crosstour/2010/oem/2010_honda_accord-crosstour_4dr-hatchback_ex-l_fq_oem_4_500.jpg',
-        price: '$16,811'
-
-    },
-    {
-        id: 2,
-        name: 'Mercedes-Benz AMG GT Coupe',
-        year: '2016',
-        model: 'AMG',
-        make: 'Mercedes Benz',
-        media: 'http://media.ed.edmunds-media.com/mercedes-benz/amg-gt/2016/oem/2016_mercedes-benz_amg-gt_coupe_s_fq_oem_1_717.jpg',
-        price: '$138,157'
-
-    },
-    {
-        id: 3,
-        name: 'BMW X6 SUV',
-        year: '2016',
-        model: 'X6',
-        make: 'BMW',
-        media: 'http://media.ed.edmunds-media.com/bmw/x6/2016/oem/2016_bmw_x6_4dr-suv_xdrive50i_fq_oem_1_717.jpg',
-        price: '$68,999'
-    },
-    {
-        id: 4,
-        name: 'Ford Edge SUV',
-        year: '2016',
-        model: 'Edge',
-        make: 'Ford',
-        media: 'http://media.ed.edmunds-media.com/ford/edge/2016/oem/2016_ford_edge_4dr-suv_sport_fq_oem_6_717.jpg',
-        price: '$36,275'
-    },
-    {
-        id: 5,
-        name: 'Dodge Viper Coupe',
-        year: '2017',
-        model: 'Viper',
-        make: 'Dodge',
-        media: 'http://media.ed.edmunds-media.com/dodge/viper/2017/oem/2017_dodge_viper_coupe_acr_fq_oem_3_717.jpg',
-        price: '$123,890'
+        name: 'Headline One',
+        url: 'headline-one',
+        author: 'parvez shaikh',
+        media: 'http://gsdk.creative-tim.com/assets/img/examples/blog_page.jpg',
+        listPara: '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>',
+        detailPara: '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae arcu ligula. Sed dapibus aliquam diam eget tincidunt. In hac habitasse platea dictumst. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent vitae risus dapibus, maximus augue nec, aliquet nisl. Sed fringilla ullamcorper placerat. Nam ut nisi ante. Morbi suscipit sapien massa, sed consectetur nulla rutrum non. Nulla nisl tellus, maximus vehicula felis in, luctus pretium quam. Pellentesque eu nunc non quam suscipit tempor nec sit amet nisi. Donec fringilla elit viverra pulvinar ultrices. Mauris egestas sapien turpis, vestibulum consequat augue ultricies ut. Vivamus lobortis lacus nec lorem ultrices, laoreet tempus ligula aliquet. Donec feugiat dignissim congue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eros lacus, imperdiet sit amet fermentum nec, euismod id mauris. Fusce at orci non ipsum lacinia pulvinar. In ornare lobortis orci. Quisque condimentum malesuada libero vel semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a eleifend neque, in commodo mauris.</p>'
     }
 ];
 
